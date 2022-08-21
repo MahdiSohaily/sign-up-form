@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <main>
+    <section class="content">
+      <div class="intro">
+        <h1 class="primary-header">
+          Learn to code by watching others
+        </h1>
+        <p class="desc">
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.
+        </p>
+      </div>
+      <div class="form-wrapper">
+        <a href="#" class="trails">
+          <span>Try it free 7 days</span>
+           then $20/mo. thereafter
+          </a>
+
+        <div class="form-section">
+          <form action="#">
+            <input required aria-label="name" type="text" name="name" id="name" placeholder="First Name">
+            <input required aria-label="last name" type="text" name="last_name" id="last_name" placeholder="Last Name">
+            <input required aria-label="email" type="email" name="email" id="email" placeholder="Email Address">
+            <input required aria-label="password" type="password" name="password" id="password" placeholder="Password">
+            <input type="submit" value="Claim your free trial">
+          </form>
+          <p class="term">By clicking the button, you are agreeing to our <span class="highlighted">Terms and Services</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
