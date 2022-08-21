@@ -93,26 +93,48 @@ main {
 }
 
 .content {
-  max-width: min(1200px, 90%);
+  max-width: min(1100px, 90%);
   margin: 1em;
+}
+
+.form-section {
+  background-color: white;
+  padding: 2em;
+  margin-top: 1.5em;
+  border-radius: 0.5em;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media screen and (min-width: 40em) {
   .content {
     display: flex;
-    gap: 1em;
+    justify-content: center;
+    align-items: center;
   }
 
   .content > * {
     flex: 1;
   }
+
+  .form-wrapper {
+    padding-inline: 2em;
+  }
 }
 
-form {
-  background-color: white;
-  padding: 2em;
-  margin-top: 1.5em;
-  border-radius: 0.5em;
+.trails {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8em;
+  padding-block: 1.4em;
+  border-radius: 0.35em;
+  background-color: var(--blue);
+  color: white;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.trails > span {
+  font-weight: var(--fw-bold);
 }
 
 input:not([type="submit"]) {
@@ -124,27 +146,57 @@ input:not([type="submit"]) {
   border-radius: 0.25em;
 }
 
+input[type="submit"] {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: var(--green);
+  border: none;
+  border-radius: 0.35em;
+  padding-block: 1em;
+  border-bottom: 3.5px solid hsl(154, 58%, 43%);
+}
+
 ::placeholder {
   color: var(--dark-blue);
   font-size: 0.8em;
   font-weight: var(--fw-semi-bold);
 }
+
+.term {
+  font-size: 0.7em;
+  color: var(--grayish-blue);
+  font-weight: var(--fw-medium);
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.highlighted {
+  color: var(--red);
+  font-weight: var(--fw-bold);
+}
+
 /* Utility classes */
 .primary-header {
-    color: white;
-    text-align: center;
-    font-weight: var(--fw-bold);
-    font-size: 1.8em;
-    line-height: 1.1;
-  }
-  .desc {
-    color: white;
-    padding-block: 1.8em;
-  }
+  color: white;
+  text-align: center;
+  font-weight: var(--fw-bold);
+  font-size: 1.8em;
+  line-height: 1.1;
+}
+
+.desc {
+  color: white;
+  padding-block: 1.8em;
+  text-align: center;
+  padding-inline: 0.4em;
+}
 
 @media screen and (min-width: 40em) {
   .intro {
-    padding-right: 3em;
+    padding-right: 1em;
   }
 
   .primary-header {
@@ -152,8 +204,9 @@ input:not([type="submit"]) {
     text-align: left;
     font-size: 3em;
   }
+
+  .desc {
+    text-align: left;
+    padding-inline: 0;
+  }
 }
-
-
-
-

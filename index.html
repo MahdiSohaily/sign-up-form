@@ -28,16 +28,21 @@
         </p>
       </div>
       <div class="form-wrapper">
-        <button>Try it free 7 days then $20/mo. thereafter</button>
+        <a href="#" class="trails">
+          <span>Try it free 7 days</span>
+           then $20/mo. thereafter
+          </a>
 
-        <form action="#">
-          <input type="text" name="name" id="name" placeholder="First Name">
-          <input type="text" name="last_name" id="last_name" placeholder="Last Name">
-          <input type="email" name="email" id="email" placeholder="Email Address">
-          <input type="password" name="password" id="password" placeholder="Password">
-          <input type="submit" value="Claim your free trial">
-        </form>
-        <p>By clicking the button, you are agreeing to our <span class="highlighted">Terms and Services</span></p>
+        <div class="form-section">
+          <form action="#">
+            <input required aria-label="name" type="text" name="name" id="name" placeholder="First Name">
+            <input required aria-label="last name" type="text" name="last_name" id="last_name" placeholder="Last Name">
+            <input required aria-label="email" type="email" name="email" id="email" placeholder="Email Address">
+            <input required aria-label="password" type="password" name="password" id="password" placeholder="Password">
+            <input type="submit" value="Claim your free trial">
+          </form>
+          <p class="term">By clicking the button, you are agreeing to our <span class="highlighted">Terms and Services</span></p>
+        </div>
       </div>
     </section>
   </main>
